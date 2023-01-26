@@ -44,10 +44,10 @@ class _MyAppState extends State<MyApp>
     ];
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Color.fromARGB(255, 12, 13, 12),
+        backgroundColor: Color.fromARGB(255, 209, 214, 209),
         appBar: AppBar(
-          title: Text('Whatsaap'),
-           backgroundColor: Color.fromARGB(255, 42, 192, 57),
+          title: Text('Juiee Batch Bakery'),
+           backgroundColor: Color.fromARGB(255, 218, 116, 188),
           ),
           body: Column(
             children: [
