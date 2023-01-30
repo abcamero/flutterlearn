@@ -1,10 +1,31 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+
 
 class Drawerleft extends StatelessWidget
 {
   Drawerleft();
+
+  _launchURLBrowser() async {
+  var url = Uri.parse("https://www.geeksforgeeks.org/");
+  if (await canLaunchUrl(url)) {
+    await launchUrl(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
+
+_launchURLApp() async {
+  var url = Uri.parse("https://www.geeksforgeeks.org/");
+  if (await canLaunchUrl(url)) {
+    await launchUrl(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
   @override
   Widget build(BuildContext context)
   {
@@ -53,9 +74,8 @@ class Drawerleft extends StatelessWidget
       ListTile(
               leading: const Icon(Icons.logout),
               title: const Text(' Log Out '),
-              onTap: () {
-                Navigator.pop(context);
-              },          
+              onTap:
+                (){_launchURLApp();},          
       
       ),
     ],
