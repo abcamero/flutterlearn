@@ -9,8 +9,8 @@ class Drawerleft extends StatelessWidget
 {
   Drawerleft();
 
-  _launchURLBrowser() async {
-  var url = Uri.parse("https://www.geeksforgeeks.org/");
+  launchURLBrowser() async {
+  var url = Uri.parse("https://www.india.gov.in/topics/law-justice");
   if (await canLaunchUrl(url)) {
     await launchUrl(url);
   } else {
@@ -18,8 +18,8 @@ class Drawerleft extends StatelessWidget
   }
 }
 
-_launchURLApp() async {
-  var url = Uri.parse("https://www.geeksforgeeks.org/");
+launchURLApp() async {
+  var url = Uri.parse("https://www.india.gov.in/topics/law-justice");
   if (await canLaunchUrl(url)) {
     await launchUrl(url);
   } else {
@@ -75,7 +75,7 @@ _launchURLApp() async {
               leading: const Icon(Icons.logout),
               title: const Text(' Log Out '),
               onTap:
-                (){_launchURLApp();},          
+                (){},          
       
       ),
     ],
