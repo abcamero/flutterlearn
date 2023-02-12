@@ -66,7 +66,7 @@ launchURLApp() async {
       ),
       ListTile(
               leading: const Icon(Icons.book),
-              title: const Text(' My Courses '),
+              title: const Text(' My Bookmarks '),
               onTap: () {
                 Navigator.pop(context);
               },

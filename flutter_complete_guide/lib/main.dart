@@ -40,19 +40,6 @@ class MyAppState extends State<MyApp>
 
   @override
   Widget build(BuildContext context) {
-  /*var questions = [
-      {
-        'questionText' : 'What\'s your favourite color',
-        'answers' : ['Black','White','Adrak','Lasan'],
-      },
-      {
-        'questionText' : 'What\'s your fav animal',
-        'answers' : ['Black Buck','White Tiger','Adrak','Lasan'],        
-      },
- 
-
-    ];
-     */
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Color.fromARGB(255, 209, 214, 209),
@@ -61,17 +48,12 @@ class MyAppState extends State<MyApp>
            backgroundColor: Color.fromARGB(255, 41, 102, 193),
           ),
           body: Column(
+
           children: [
-            /*Questions(questions[questionIndex]['questionText']),
-              ...(questions[questionIndex]['answers'] as List<String>).map((answer) {
-                return Answer(answerQuestion, answer);
-              }).toList(),  */ 
-              ElevatedButton(onPressed: () {obj.launchURLApp();} , child: const Text('Visit Site'))
+              ElevatedButton(onPressed: () {obj.launchURLApp();} , child: const Text('Visit Site')),
+              ElevatedButton(onPressed: () {}, child: const Text('Visit Blogs')),
+              Image.asset('asset/img1.png'),
             ],
-            /*children: [
-              Text("Welcome to Get my Law"),
-              TextButton(onPressed: obj.launchURLApp(), child: Text('Visit Law Site'))
-            ],*/
           ),
           drawer: Drawerleft()          
 )
